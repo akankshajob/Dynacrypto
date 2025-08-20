@@ -23,7 +23,6 @@ serverless-etl-crypto/
 ├── 📊 crypto_data_analysis.ipynb # Jupyter notebook for analysis
 ├── 🖼️  diagram.png              # Architecture diagram
 ├── 📖 README.md                 # Project documentation
-└── 🚫 .gitignore               # Git ignore rules
 ```
 
 ## 🚀 How It Works
@@ -31,6 +30,7 @@ serverless-etl-crypto/
 2. Stores raw + transformed JSON in S3.
 3. EventBridge triggers Lambda periodically.
 4. Notebook fetches latest S3 data using Boto3 and visualizes it.
+
 
 
 
