@@ -12,7 +12,8 @@ This project extracts real-time crypto prices using a public API (CoinGecko), pr
 - **Python, Boto3, Pandas, Matplotlib**
 
 ## 📊 Architecture
-![Architecture](architecture_diagram.png)
+<p align="center">
+  <img src="diagram.png" alt="architecture" width="600"><br><br>
 
 ## 📁 Project Structure
 serverless-etl-crypto/
@@ -28,4 +29,5 @@ serverless-etl-crypto/
 2. Stores raw + transformed JSON in S3.
 3. EventBridge triggers Lambda periodically.
 4. Notebook fetches latest S3 data using Boto3 and visualizes it.
+
 
