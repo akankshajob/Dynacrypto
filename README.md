@@ -16,18 +16,21 @@ This project extracts real-time crypto prices using a public API (CoinGecko), pr
   <img src="diagram.png" alt="architecture" width="600"><br><br>
 
 ## 📁 Project Structure
+```
 serverless-etl-crypto/
 │
-├── extract_to_s3.py # Lambda function
-├── etl_pipeline_notebook.ipynb # Jupyter analysis
-├── architecture_diagram.png # Project flow diagram
-├── README.md
-└── .gitignore
+├── 📄 extract_to_s3.py          # Lambda function for data extraction
+├── 📊 crypto_data_analysis.ipynb # Jupyter notebook for analysis
+├── 🖼️  diagram.png              # Architecture diagram
+├── 📖 README.md                 # Project documentation
+└── 🚫 .gitignore               # Git ignore rules
+```
 
 ## 🚀 How It Works
 1. Lambda extracts crypto price from API.
 2. Stores raw + transformed JSON in S3.
 3. EventBridge triggers Lambda periodically.
 4. Notebook fetches latest S3 data using Boto3 and visualizes it.
+
 
 
