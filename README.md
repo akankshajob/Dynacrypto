@@ -1,6 +1,6 @@
 # Serverless ETL Pipeline for Crypto Price Monitoring 🪙
 
-## ✅ Overview
+##  Overview
 This project extracts real-time crypto prices using a public API (CoinGecko), processes the data using AWS Lambda, stores it in S3 (raw & transformed), and optionally visualizes it using Jupyter Notebook locally.
 
 ## ☁️ Tech Stack
@@ -30,6 +30,7 @@ serverless-etl-crypto/
 2. Stores raw + transformed JSON in S3.
 3. EventBridge triggers Lambda periodically.
 4. Notebook fetches latest S3 data using Boto3 and visualizes it.
+
 
 
 
